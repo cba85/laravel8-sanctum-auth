@@ -31,7 +31,7 @@ class ApiTokenController extends Controller
         $user->tokens()->where('tokenable_id', $user->id)->delete();
 
         // 4. Create auth token
-        $token = $user->createToken($request->device_name)->plainTextToken;
+        $token = $user->createToken($request->device_name, ['posts:read'])->plainTextToken;
 
         // 5. Return token
         return response()->json([
@@ -69,7 +69,7 @@ class ApiTokenController extends Controller
         ]);
 
         // 4. Create auth token
-        $token = $user->createToken($request->device_name)->plainTextToken;
+        $token = $user->createToken($request->device_name, ['posts:read'])->plainTextToken;
 
         // 5. Return token
         return response()->json([
