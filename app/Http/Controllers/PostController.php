@@ -45,10 +45,10 @@ class PostController extends Controller
         $post = Post::find($id);
 
         if (!$post) {
-            return response()->json(['message' => "Not Found"]);
+            return response()->json(['message' => "Not Found"], 404);
         }
 
-        if ($post->user->id != $request->user()->id) {
+        if ($post->user_id != $request->user()->id) {
             return response()->json(["message" => "Forbidden"], 403);
         }
 
