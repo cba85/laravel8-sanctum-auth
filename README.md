@@ -1,4 +1,4 @@
-# Laravel Sanctum Auth API
+# Laravel 8 Sanctum Auth API
 
 > For demonstration purpose only
 
