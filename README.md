@@ -2,4 +2,4 @@
 
 > For demonstration purpose only
 
-Uses with [Vue 3 app](https://github.com/cba85/teach-laravel-sanctum-auth-vue3-app)
+Uses with [Laravel Sanctum Auth Vue 3 app](https://github.com/cba85/teach-laravel-sanctum-auth-vue3-app)
